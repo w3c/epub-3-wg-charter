@@ -9,6 +9,32 @@
     	<link rel="stylesheet" type="text/css" href="https://www.w3.org/OldGuide/pubrules-style.css">
     	<link rel="stylesheet" type="text/css" href="https://www.w3.org/2006/02/charter-style.css">
 		<style>
+			.warning {
+				box-shadow: 10px 5px 3px 0px navy;
+				border-top-width: thin;
+				border-right-width: thin;
+				border-bottom-width: thin;
+				border-left-width: thin;
+				border-top-style: solid;
+				border-right-style: solid;
+				border-bottom-style: solid;
+				border-left-style: solid;
+				border-radius: 3px;
+				width: 80%;
+				padding-top: 0.5em;
+				padding-right: 0.5em;
+				padding-bottom: 0.5em;
+				padding-left: 0.5em;
+			}
+
+			.warning h1 {
+				font-size: 120%;
+				font-style: italic;
+				font-weight: bold;
+				text-align: center;
+
+			}
+
 			ul#navbar {
 				font-size: small;
 			}
@@ -42,6 +68,20 @@
 			footer {
 				font-size: small;
 			}
+
+			aside.comment {
+				color: #900;
+				background: oldlace;
+				border: 1px solid black;
+				padding:  0.5em;
+			}
+
+			body {	 
+				background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 150 100' width='100%' height='50%' opacity='.06'> <g transform='translate(73,45) rotate(-40)'> <rect fill='none' stroke='red' stroke-width='2' width='120' x='-60' y='3' height='20' rx='10' ry='10'/> <text x='0' y='20' font-family='sans-serif' font-size='18' fill='red' text-anchor='middle'>Draft</text> </g> </svg>");
+				background-position: top center;	 
+				background-repeat: repeat;	 
+			}
+
 		</style>
 	</head>
   	<body>
@@ -66,8 +106,19 @@
 		</header>
 
     	<main>
-      		<h1 id="title">PROPOSED EPUB 3 Working Group Charter</h1>
+			<h1 id="title"><em>PROPOSED</em> EPUB 3 Working Group Charter</h1>
 
+			<div class=warning>
+				<h1>DRAFT</h1>
+				<p>
+					This is a <em>draft</em> text, under development by the community. The W3C Advisory Committee has been informed on the development this draft. 
+					The goal is to, eventually, submit this draft charter proposal into a draft for an official W3C AC review.
+				</p>
+				<p>
+					This proposed charter is available on <a href="https://github.com/w3c/epub-3-wg-charter">GitHub</a>. Feel free to raise <a href="https://github.com/w3c/epub-3-wg-charter/issues">issues</a></i>.
+				</p>
+			</div>
+			  
 			<p class="mission">
 				The <strong>mission</strong> of the EPUB 3 Working Group is to maintain and develop the EPUB 3 family of specifications, to represent the EPUB community in the W3C, and to support EPUB content creators and consumers by further advancing, refining, and clarifying the current EPUB specification. The Working Group will also work closely with the Publishing Community Group to support the maintenance of validation tools and the creation of documentation.
 			</p>
@@ -75,10 +126,6 @@
 			<div class="noprint">
 				<p class="join"><a href="https://www.w3.org/2004/01/pp-impl/#####/join">Join the EPUB 3 Working Group</a></p>
 			</div>
-
-			<p style="padding: 0.5ex; border: 1px solid green">
-					This proposed charter is available on <a href="https://github.com/w3c/epub-3-wg-charter">GitHub</a>. Feel free to raise <a href="https://github.com/w3c/epub-3-wg-charter/issues">issues</a></i>.
-			</p>
 
 			<section id="details">
 				<table class="summary-table">
