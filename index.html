@@ -10,7 +10,7 @@
     	<link rel="stylesheet" type="text/css" href="https://www.w3.org/2006/02/charter-style.css">
 		<style>
 			.warning {
-				box-shadow: 10px 5px 3px 0px navy;
+				box-shadow: 10px 5px 3px 0px darkgrey;
 				border-top-width: thin;
 				border-right-width: thin;
 				border-bottom-width: thin;
@@ -338,7 +338,7 @@
 						<dt id="a11y" class="spec">EPUB Accessibility 3.X</dt>
 						<dd>
               				<p>
-								EPUB Accessibility defines discovery and content accessibility requirements for EPUB Publications.
+								EPUB Accessibility defines discovery and content accessibility requirements for EPUB Publications. The specifications is build on <a href='https://www.w3.org/TR/WCAG22/'>WCAG 2.x</a> and adds accessibility requirements specific to publishing.
 							</p>
 
 							<p class="draft-status">
@@ -358,16 +358,8 @@
 						Other non-normative documents may be created such as:
 					</p>
 					<ul>
-						<li>Test suite and implementation report for the specification;</li>
-						<li>Accessibility
-							<ul>
-								<li>EPUB Accessibility Techniques</li>
-								<li>Accessibility Guidance Documents</li>
-								<li>Guidelines on exposing accessibility metadata for reading systems and libraries</li>
-								<li>Guidelines on writing accessibility summaries</li>
-								<li>Mappings between accessibility vocabularies</li>
-							</ul>
-						</li>
+						<li>Test suite and implementation report for the specification.</li>
+						<li>EPUB Accessibility Techniques.</li>
 						<li>Improved Alignment with Web Platform
 							<ul>
 								<li>Which Web APIs that are suitable for EPUB usage.should be available in EPUB?</li>
@@ -376,12 +368,6 @@
 							</ul>
 						</li>
 					</ul>
-					<section id=validation>
-						<h4>EPUB Validation</h4>
-						<p>
-							<a href="https://github.com/w3c/epubcheck">EPUBCheck</a>, the EPUB validation tool, is maintained by the <a href="http://www.daisy.org/">DAISY Consortium</a> on behalf of the W3C. The EPUB 3 Working Group will work closely with the developers of EPUBCheck and the Publishing Community Group to clarify questions about the specification. The <a href="https://www.w3.org/community/publishingcg/">W3C Publishing Community Group</a> will be responsible for soliciting and managing feedback on EPUBCheck.
-						</p>
-					</section>
 				</section>
 
 				<section id="timeline">
@@ -432,32 +418,44 @@
 					<dl>
 						<dt><a href="https://www.w3.org/community/publishingbg/">Publishing Business Group</a></dt>
 						<dd>
-							The Publishing Business Group will provide business cases and guidance to the working group as needed. PBG will also provide support for industry outreach.
+							<p>
+								The Publishing Business Group will provide business cases and guidance to the working group as needed. PBG will also provide support for industry outreach.
+							</p>
 						</dd>
 
 						<dt><a href="https://www.w3.org/community/publishingcg/">Publishing Community Group</a></dt>
 						<dd>
-							The Publishing Business Group will provide business cases and guidance to the working group as needed. PBG will also provide support for industry outreach.
+							<p>
+								The Publishing Business Group will provide business cases and guidance to the working group as needed. PBG will also provide support for industry outreach.
+							</p>
 						</dd>
 						<dt><a href="https://www.w3.org/Style/CSS/">CSS Working Group</a></dt>
 						<dd>
-							The EPUB 3 Working Group will contribute to the CSS WG with the development and testing of new and existing CSS functionality that is of interest to the publishing community. The group will designate liaisons to work with the CSS WG on issues as needed. Liaisons will ideally be part of both groups.
+							<p>
+								The EPUB 3 Working Group will contribute to the CSS WG with the development and testing of new and existing CSS functionality that is of interest to the publishing community. The group will designate liaisons to work with the CSS WG on issues as needed. Liaisons will ideally be part of both groups.
+							</p>
 						</dd>
 						<dt><a href="https://www.w3.org/community/wicg/">Web Incubator Community Group (WICG)</a></dt>
 						<dd>
-							<span class='todo'>Somethings to be added here</span>
+							<aside class=comment>A text should still be added here</aside>
 						</dd>
 						<dt><a href="https://www.w3.org/WAI/ARIA/">ARIA Working Group</a></dt>
 						<dd>
-							This Working Group is responsible for the development of ARIA and the development of DPUB-ARIA Module 1.1. The EPUB 3 Working Group will support the ARIA Working Group’s work to maintain this specification.
+							<p>
+								This Working Group is responsible for the development of ARIA and the development of DPUB-ARIA Module 1.1. The EPUB 3 Working Group will support the ARIA Working Group’s work to maintain this specification.
+							</p>
 						</dd>
 						<dt><a href="https://www.w3.org/community/sync-media-pub/">Synchronized Multimedia for Publications Community Group</a></dt>
 						<dd>
-							This CG plans to produce a simplified version of audio and video synchronization that may become part of a future EPUB version.
+							<p>
+								This CG plans to produce a simplified version of audio and video synchronization that may become part of a future EPUB version.
+							</p>
 						</dd>
 						<dt><a href="http://www.w3.org/community/bdcomacg/">BD Comics Manga CG </a></dt>
 						<dd>
-							The BD Comics Manga CG is focused on incubation for features relating to comics, manga, and bandes dessinées, based on the Publication Manifest format. Issues arising in that CG may also influence the further evolution of EPUB 3.X
+							<p>
+								The BD Comics Manga CG is focused on incubation for features relating to comics, manga, and bandes dessinées, based on the Publication Manifest format. Issues arising in that CG may also influence the further evolution of EPUB 3.X.
+							</p>
 						</dd>
 					</dl>
 
@@ -468,34 +466,45 @@
 					<dl>
 						<dt><a href="http://readium.org/">Readium Foundation</a></dt>
 						<dd>
-							The open source development at the Readium Foundation (i.e., Readium-2) is at the core of a number of EPUB 3 reading systems around the world. As such, the feedback of that development will be essential to the work around EPUB 3.X.
-						</dd>
+							<p>
+								The open source development at the Readium Foundation (i.e., Readium-2) is at the core of a number of EPUB 3 reading systems around the world. As such, the feedback of that development will be essential to the work around EPUB 3.X.
 
+							</p>							
+						</dd>
 						<dt><a href="https://www.edrlab.org/">EDRLab</a></dt>
 						<dd>
-							EDRLab, acting as the European headquarter of the <a href="http://readium.org/">Readium Foundation</a>, is actively working on the ReadiumJS, Readium SDK, and Readium-2 projects. They are implementers of EPUB 3 and will provide valuable feedback for the evolution of EPUB 3.X.
+							<p>
+								EDRLab, acting as the European headquarter of the <a href="http://readium.org/">Readium Foundation</a>, is actively working on the ReadiumJS, Readium SDK, and Readium-2 projects. They are implementers of EPUB 3 and will provide valuable feedback for the evolution of EPUB 3.X.
+							</p>
 						</dd>
 
 						<dt><a href="https://daisy.org/">DAISY Consortium</a></dt>
 						<dd>
-							The DAISY consortium currently manages <a href="http://epubtest.org/">epubtest.org</a>, the support grid for EPUB. They also provide support on specification writing, accessibility, and feedback on EPUB implementation. Their feedback on the further development of EPUB in general, and EPUB Accessibility in particular, will be essential for the EPUB 3.X development.
+							<p>
+								The DAISY consortium currently manages <a href="http://epubtest.org/">epubtest.org</a>, 
+								the support grid for EPUB. They also provide support on specification writing, accessibility, 
+								and feedback on EPUB implementation. Their feedback on the further development of EPUB in general, and EPUB Accessibility in particular, will be essential for the EPUB 3.X development.
+							</p>
+							<p>
+								<a href="https://github.com/w3c/epubcheck">EPUBCheck</a>, the EPUB validation tool, is maintained by the <a href="http://www.daisy.org/">DAISY Consortium</a> on behalf of the W3C. The EPUB 3 Working Group will work closely with the developers of EPUBCheck and the Publishing Community.
+							</p>
 						</dd>
 
 						<dt><a href="https://www.iso.org">International Standards Organization (ISO)</a></dt>
 						<dd>
-							<ul>
-								<li>
-									An earlier version of EPUB (<a href="http://idpf.org/epub/301">EPUB 3.0.1</a>) was published as an ISO standard ISO/IEC TS 30135:2014 (parts 1-7). This Working Group and ISO may consider updating that ISO specification once the new Recommendations are published.
-								</li>
-								<li>
-									There are currently activities within <a href="https://isotc.iso.org/livelink/livelink?func=ll&objId=8913149&objAction=browse&sort=name">ISO/IEC JTC 001/SC34</a> on specifications that rely on earlier versions of EPUB (e.g., EPUB Preservation, EPUB Accessibility). A liaison has to be maintained on, possibly, updating those ISO specifications to the outcomes of this Working Group. 
-								</li>
-							</ul>
+							<p>
+								An earlier version of EPUB (<a href="http://idpf.org/epub/301">EPUB 3.0.1</a>) was published as an ISO standard ISO/IEC TS 30135:2014 (parts 1-7). This Working Group and ISO may consider updating that ISO specification once the new Recommendations are published.
+							</p>
+							<p>
+								There are currently activities within <a href="https://isotc.iso.org/livelink/livelink?func=ll&objId=8913149&objAction=browse&sort=name">ISO/IEC JTC 001/SC34</a> on specifications that rely on earlier versions of EPUB (e.g., EPUB Preservation, EPUB Accessibility). A liaison has to be maintained on, possibly, updating those ISO specifications to the outcomes of this Working Group. 
+							</p>
 						</dd>
 
 						<dt><a href="https://www.ieeeltsc.org/">IEEE Learning Technology Standard Committee</a></dt>
 						<dd>
-							This study group considers developing reports, guides, etc., addressing the requirements for e-books intended for use in learning platforms. A liaison with the study group will provide important inputs for the developments of EPUB 3.x with the goal of making it useful for that community.
+							<p>
+								This study group considers developing reports, guides, etc., addressing the requirements for e-books intended for use in learning platforms. A liaison with the study group will provide important inputs for the developments of EPUB 3.x with the goal of making it useful for that community.
+							</p>
 						</dd>
 					</dl>
 				</section>
