@@ -192,7 +192,15 @@
 				<h2>Scope</h2>
 				
 				<p>
-					EPUB is a distribution and interchange format for digital publications and documents that has been in global use by publishers and vendors for over a decade. The latest version of EPUB, <a href='https://www.w3.org/publishing/epub32/epub-spec.html'>EPUB 3.2</a>, has been published by the <a href='https://www.w3.org/community/epub3/'>W3C EPUB 3 Community Group</a> as a Final Specification. EPUB 3 is strongly related to, and reliant upon, W3C specifications: it provides a means of representing, packaging, and encoding structured and semantically enhanced Web content—including <a href="https://html.spec.whatwg.org/multipage/">HTML</a>, <a href="https://www.w3.org/Style/CSS/specs.en.html">CSS</a>, <a href="https://www.w3.org/TR/SVG11/">SVG</a href="https://www.w3.org/TR/SVG11/">, <a href="https://www.w3.org/TR/MathML/">MathML</a> and other resources—for distribution in a single–file container. The EPUB 3 Working Group will advance, refine, and clarify the standard to ensure its relevance as digital publishing continues to evolve.
+					EPUB is a distribution and interchange format for digital publications and documents that has been in global use by publishers and vendors for over a decade. The latest version of EPUB, <a href='https://www.w3.org/publishing/epub32/epub-spec.html'>EPUB 3.2</a>, has been published by the <a href='https://www.w3.org/community/epub3/'>W3C EPUB 3 Community Group</a> as a Final Specification. EPUB 3 is strongly related to, and reliant upon, W3C specifications: it provides a means of representing, packaging, and encoding structured and semantically enhanced Web content—including <a href="https://html.spec.whatwg.org/multipage/">HTML</a>, <a href="https://www.w3.org/Style/CSS/specs.en.html">CSS</a>, <a href="https://www.w3.org/TR/SVG11/">SVG</a>, <a href="https://www.w3.org/TR/MathML/">MathML</a> and other resources—for distribution in a single–file container. 
+				</p>
+					
+				<p>
+					However, the interoperability of EPUB 3 content, and the conformance of EPUB 3 reading systems, remain a serious issue. There is a need for a more rigorous and comprehensive testing of EPUB 3; this may also mean the need for a further clarification of the standard text itself. (See also the <a href="https://www.w3.org/blog/2020/03/listen-to-the-people-the-future-of-epub-and-new-directions-for-publishing-w3c/">separate blog</a> for more background.) The EPUB 3 Working Group will advance, refine, and clarify the EPUB 3 standard to ensure its relevance as digital publishing continues to evolve, and specify a comprehensive testing environment for EPUB 3. 
+				</p>
+
+				<p>
+					The Working Group will produce a new version of EPUB 3, codenamed “EPUB 3.X” for the purposes of this charter; the Working Group will have to define the correct numbering scheme (e.g., EPUB 3.2.1, or EPUB 3.3, etc.). The Working Group will <em>not</em> change the EPUB 3.2 version itself, which will therefore remain unchanged. 
 				</p>
 
 				<p>
@@ -213,15 +221,24 @@
 						Enhancements and improvements to internationalization of technologies defined for EPUB to ensure global usability. While the content of a digital publication (HTML, CSS, etc.) already have advanced internationalization features, an EPUB 3 publication also includes additional textual content like metadata, table of contents, etc., which must abide to all requirements of internationalization. 
 					</li>
 					<li>
-						Integration of new Open Web Platform technologies necessary for enhanced digital publishing experiences, including HTML5 for content documents and new core media types for content.
+						Continued integration of errata and bug fixes.
 					</li>
 					<li>
-						Continued integration of errata and bug fixes.
+						Integration of new Open Web Platform technologies for enhanced digital publishing experiences; these may include:
+						<ul>
+							<li>
+								new media types, such as OPUS, BPG, or WebP;
+							</li>
+							<li>
+								allowing the HTML Serialization of HTML5, including whether and how to handle xml-specific technologies like <code>epub:type</code> and the <code>ssml:*</code> attributes;
+							</li>
+						</ul>
+						The effects of such new technical features on deployed systems and checking tools must be carefully analyzed. In case of doubt, such features should not be added to EPUB 3.X.
 					</li>
 				</ul>
 
 				<p>
-					EPUB 3.X will endeavor to remain compatible with existing content. Any EPUB 3.2 publication should be valid under any new version of EPUB published by this Working Group, unless it relies on features that are subject to errata on EPUB 3.2. In particular all EPUB 3 specifications defined by this Working Group will use <code style="color:black">version=”3.0”</code> for the package file, to ensure compatibility with previous versions of EPUB 3.
+					EPUB 3.X will endeavor to remain compatible with existing content. <em>Any EPUB 3.2 publication should be valid under any new version of EPUB published by this Working Group</em>, unless it relies on features that are subject to errata on EPUB 3.2. In particular, all EPUB 3 specifications defined by this Working Group will use <code style="color:black">version=”3.0”</code> for the package file, to ensure compatibility with previous versions of EPUB 3.
 				</p>	
 
 				<p>
@@ -273,17 +290,6 @@
 							<p class="draft-status">
 								<b>Draft state:</b> <a href="https://www.w3.org/publishing/epub32/epub-spec.html">Final Community Group Specification</a>.
 							</p>
-
-							<p><b>Technical improvements planned compared to the draft state may include:</b></p>
-							<ul>
-								<li>New Media Types, for example:
-									<ul>
-										<li>OPUS</li>
-										<li>BPG</li>
-										<li>WebP</li>
-									</ul>
-								</li>
-							</ul>
 								
 							<p class="milestone"><b>Expected completion:</b> Q2 2022</p>
 						</dd>
@@ -313,17 +319,6 @@
 							<p class="draft-status">
 								<b>Draft state:</b> <a href="https://www.w3.org/publishing/epub32/epub-contentdocs.html">Final Community Group Specification</a>.
 							</p>
-
-							<p><b>Technical improvements planned compared to the draft state may include:</b></p>
-							<ul>
-								<li>Improved Alignment with Web Platform:
-									<ul>
-										<li>Allowing the HTML Serialization of HTML5</li>
-									</ul>
-								</li>
-								<li>Refinement for <code style="color:black">epub:type</code></li>
-								<li>Reading System Conformance</li>
-							</ul>
 								
 							<p class="milestone"><b>Expected completion:</b> Q2 2022</p>
 						</dd>
