@@ -230,10 +230,24 @@
 								new media types, such as OPUS, BPG, or WebP;
 							</li>
 							<li>
-								allowing the HTML Serialization of HTML5, including whether and how to handle xml-specific technologies like <code>epub:type</code> and the <code>ssml:*</code> attributes;
+								allowing the HTML Serialization of HTML5, including whether and how to handle xml-specific technologies like <code>epub:type</code> and the <code>ssml:*</code> attributes.
 							</li>
 						</ul>
 						Such new technical features should be incubated by the <a href="https://www.w3.org/community/publishingcg/">Publishing Community Group</a> before being considered by this Working Group.  Also, the effects on deployed systems and checking tools, and the risk of additional cost for adoption, must be carefully analyzed. In case of doubt, such features should not be added to EPUB 3.X.
+					</li>
+					<li>
+						Improvements of the <a href='#a11y'>EPUB Accessibility</a> specification; these may include, but not limited to:
+						<ul>
+							<li>
+								verify that EPUB Accessibility 1.X meets the <a href='https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2019.151.01.0070.01.ENG&toc=OJ:L:2019:151:TOC'>EU Directive for accessibility requirements for eBooks</a> (European Accessibility Act, Directive 2019/882 of the European Parliament); the WG will conduct a review of the <a href='#a11y'>EPUB Accessibility</a> specification for meeting the EU requirements, provide clarifications, and add the missing pieces if required;
+							</li>
+							<li>
+								consider new and incremental features on accessibility, provided that the aforementioned EU accessibility requirements and the underlying WCAG 2.X requirements are not compromised; the features under consideration include accessibility requirements for fixed layout documents (FXL), or the possibility of referring to different versions of WCAG 2.X;
+							</li>
+							<li>
+								improve the specification by providing clarifications and reducing ambiguities.
+							</li>
+						</ul>
 					</li>
 				</ul>
 
@@ -352,10 +366,10 @@
 							<p class="milestone"><b>Expected completion:</b> Q1 2023</p>
 						</dd>
 
-						<dt id="a11y" class="spec">EPUB Accessibility</dt>
+						<dt id="a11y" class="spec">EPUB Accessibility 1.X</dt>
 						<dd>
               				<p>
-								The next version of the EPUB Accessibility defines discovery and content accessibility requirements for EPUB Publications. The specifications is build on <a href='https://www.w3.org/TR/WCAG22/'>WCAG 2.x</a> and adds accessibility requirements specific to publishing.
+								EPUB Accessibility defines discovery and content accessibility requirements for EPUB Publications. The specification builds on <a href='https://www.w3.org/TR/WCAG22/'>WCAG 2.x</a> and adds accessibility requirements specific to publishing.
 							</p>
 
 							<p class="draft-status">
@@ -376,7 +390,7 @@
 					</p>
 					<ul>
 						<li>Test suite and implementation report for the specification.</li>
-						<li>EPUB Accessibility Techniques (based on the <a href="http://idpf.org/epub/a11y/techniques/techniques.html">corresponding <abbr title="International Digital Publishing Forum">IDPF</abbr> document</a> ).</li>
+						<li>EPUB Accessibility Techniques (based on the <a href="http://idpf.org/epub/a11y/techniques/techniques.html">corresponding <abbr title="International Digital Publishing Forum">IDPF</abbr> document</a>).</li>
 						<li>Guides on improving alignment with the Open Web Platform, such as:
 							<ul>
 								<li>Which Web APIs that are suitable for EPUB usage.should be available in EPUB?</li>
@@ -389,10 +403,10 @@
 						Furthermore, the Working group will review the existing EPUB registries, originally published by <a href='http://idpf.org'><abbr title="International Digital Publishing Forum">IDPF</abbr></a> and, if necessary, will set up a long term control at W3C for their maintenance. These registries include: 
 					</p>
 					<ul>
-						<li><a href='http://www.idpf.org/epub/registries/authorities/'>EPUB Subject Authorities Registry</a></li>
-						<li><a href='http://www.idpf.org/epub/registries/roles'>EPUB Collection Roles Registry</a></li>
-						<li><a href='http://www.idpf.org/epub/vocab/package/types'>EPUB Publication Types Registry</a></li>
-						<li><a href='http://www.idpf.org/epub/vocab/structure/'>EPUB Structural Semantics Vocabulary</a></li>
+						<li><a href='http://www.idpf.org/epub/registries/authorities/'>EPUB Subject Authorities Registry</a>.</li>
+						<li><a href='http://www.idpf.org/epub/registries/roles'>EPUB Collection Roles Registry</a>.</li>
+						<li><a href='http://www.idpf.org/epub/vocab/package/types'>EPUB Publication Types Registry</a>.</li>
+						<li><a href='http://www.idpf.org/epub/vocab/structure/'>EPUB Structural Semantics Vocabulary</a>.</li>
 					</ul>
 				</section>
 
@@ -402,11 +416,12 @@
 						These dates are not meant as deadlines; work may need to continue after these dates to ensure the quality of the deliverables.
 					</p>
 					<ul>
-						<li>September 2020: First teleconference</li>
-						<li>October 2020: “Virtual” face-to-face meeting (as part of TPAC 2020)</li>
-						<li>February 2021: FPWD for EPUB 3.X</li>
-						<li>November 2021: Candidate Recommendation for EPUB 3.X</li>
-						<li>February 2023: Recommendation for EPUB 3.X</li>
+						<li>September 2020: First teleconference.</li>
+						<li>October 2020: “Virtual” face-to-face meeting (as part of TPAC 2020).</li>
+						<li>February 2021: FPWD for EPUB 3.X.</li>
+						<li>May 2021: WD for EPUB Accessibility 1.X that is in-sync with the <a href='https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2019.151.01.0070.01.ENG&toc=OJ:L:2019:151:TOC'>EU Directive for accessibility requirements for eBooks</a>.</li>
+						<li>November 2021: Candidate Recommendation for EPUB 3.X.</li>
+						<li>February 2023: Recommendation for EPUB 3.X.</li>
 					</ul>
 				</section>
       		</section>
@@ -482,6 +497,12 @@
 						<dd>
 							<p>
 								The Web Platform Incubator Community Group (WICG) provides a lightweight venue for proposing and discussing new web platform features, like new HTML features or Web Platform API-s. Some of those may have an influence on the future evolution of EPUB 3. Also, new technical features arising during the development of EPUB 3.X may have relevance for the Web Platform in general, in which case they should be explored further together with with the Web Platform Incubator Community Group.
+							</p>
+						</dd>
+						<dt><a href="https://www.w3.org/WAI/GL/">Accessibility Guidelines Working Group</a></dt>
+						<dd>
+							<p>
+								The Accessibility Guidelines Working Group develops guidelines to make Web content accessible for people with disabilities, and is responsible for the development and maintenance of the WCAG series of Recommendations. The EPUB Accessibility specification is already based on WCAG, and a liaison will be set up to ensure that any new features in EPUB 3.X, in particular EPUB Accessibility 1.X, would continue to refer to WCAG 2.X, when applicable.    
 							</p>
 						</dd>
 						<dt><a href="https://www.w3.org/WAI/ARIA/">ARIA Working Group</a></dt>
